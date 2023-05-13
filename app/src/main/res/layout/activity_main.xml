@@ -4,14 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:foregroundGravity="right"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvIcecream"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Ice cream sanduwich have chocolet wafers and vanila filling"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivIceCream"
+        app:layout_constraintTop_toTopOf="@+id/ivIceCream" />
 
     <ImageView
         android:id="@+id/ivDonuts"
         android:layout_width="144dp"
         android:layout_height="149dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="114dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
         app:srcCompat="@drawable/donut_circle" />
@@ -20,10 +34,8 @@
         android:id="@+id/ivIceCream"
         android:layout_width="150dp"
         android:layout_height="155dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/ivFroyo"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivDonuts"
         app:srcCompat="@drawable/icecream_circle" />
@@ -32,8 +44,8 @@
         android:id="@+id/ivFroyo"
         android:layout_width="154dp"
         android:layout_height="138dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivIceCream"
         app:srcCompat="@drawable/froyo_circle" />
@@ -49,5 +61,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDonuts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Donuts are glazed and sprinkled with candy."
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivDonuts"
+        app:layout_constraintTop_toTopOf="@+id/ivDonuts" />
+
+    <TextView
+        android:id="@+id/tvFroyo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Frozen is premium self-serve frozen yogurt."
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ivIceCream"
+        app:layout_constraintTop_toTopOf="@+id/ivFroyo" />
+
+    <ImageView
+        android:id="@+id/ivEnvelope"
+        android:layout_width="74dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="60dp"
+        android:adjustViewBounds="false"
+        app:layout_constrainedHeight="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
