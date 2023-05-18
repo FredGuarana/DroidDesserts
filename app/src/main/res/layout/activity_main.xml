@@ -14,7 +14,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="Ice cream sanduwich have chocolet wafers and vanila filling"
+        android:text="Ice cream sanduwich version"
         android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivIceCream"
@@ -69,7 +69,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="Donuts are glazed and sprinkled with candy."
+        android:text="Donuts version"
         android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivDonuts"
@@ -82,23 +82,23 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="Frozen is premium self-serve frozen yogurt."
+        android:text="Frozen yogurt veresion"
         android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/ivIceCream"
         app:layout_constraintTop_toTopOf="@+id/ivFroyo" />
 
-    <ImageView
-        android:id="@+id/ivEnvelope"
-        android:layout_width="74dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="60dp"
-        android:adjustViewBounds="false"
-        app:layout_constrainedHeight="false"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@android:drawable/ic_media_play"
+        tools:layout_editor_absoluteY="788dp"
+        android:contentDescription="Próxima tela"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

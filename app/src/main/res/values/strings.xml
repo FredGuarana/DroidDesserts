@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Droid Desserts</string>
+    <string name="app_name">Droid Desserts
+     </string>
+    <string name="ivDonuts">Versao Donuts
+    </string>
+    <string name="ivIcecream">Versao Ice Cream Sanduwich
+    </string>
+    <string name="ivFrozen">Versao Frozen Yogurt
+    </string>
 </resources>
